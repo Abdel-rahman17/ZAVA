@@ -72,7 +72,7 @@ export default function ProductShowcase() {
   return (
     <section 
       id="showcase-parallax-section" 
-      className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-[#111111]"
+      className="relative w-full h-[85vh] md:h-[100vh] overflow-hidden bg-[#111111]"
     >
       
       {/* 1. Full-Width Background Parallax Image Slider (Exactly 4 items) */}
