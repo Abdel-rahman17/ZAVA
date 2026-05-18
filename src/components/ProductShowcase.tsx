@@ -81,8 +81,8 @@ export default function ProductShowcase() {
           <div
             key={idx}
             className={`absolute inset-0 w-full h-full transition-all duration-[1000ms] ease-in-out transform ${idx === activeIndex
-                ? "opacity-100 scale-100 z-10"
-                : "opacity-0 scale-103 pointer-events-none z-0"
+              ? "opacity-100 scale-100 z-10"
+              : "opacity-0 scale-103 pointer-events-none z-0"
               }`}
             style={{
               transform: `translateY(${scrollOffset * 0.15}px)`
@@ -120,8 +120,8 @@ export default function ProductShowcase() {
             <div
               key={idx}
               className={`transition-all duration-700 ease-in-out ${idx === activeIndex
-                  ? "opacity-100 translate-x-0 relative z-10"
-                  : "opacity-0 translate-x-8 absolute pointer-events-none z-0"
+                ? "opacity-100 translate-x-0 relative z-10"
+                : "opacity-0 translate-x-8 absolute pointer-events-none z-0"
                 }`}
             >
               {/* Category Tag */}
