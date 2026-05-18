@@ -70,20 +70,21 @@ export default function ProductShowcase() {
   }, [handleNext]);
 
   return (
-    <section
-      id="showcase-parallax-section"
-      className="relative w-full h-[85vh] md:h-[100vh] overflow-hidden bg-[#111111]"
+    <section 
+      id="showcase-parallax-section" 
+      className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-[#111111]"
     >
-
+      
       {/* 1. Full-Width Background Parallax Image Slider (Exactly 4 items) */}
       <div className="absolute inset-0 w-full h-[125%] -top-[12%] z-0 pointer-events-none">
         {imageSlides.map((imgSrc, idx) => (
           <div
             key={idx}
-            className={`absolute inset-0 w-full h-full transition-all duration-[1000ms] ease-in-out transform ${idx === activeIndex
-              ? "opacity-100 scale-100 z-10"
-              : "opacity-0 scale-103 pointer-events-none z-0"
-              }`}
+            className={`absolute inset-0 w-full h-full transition-all duration-[1000ms] ease-in-out transform ${
+              idx === activeIndex 
+                ? "opacity-100 scale-100 z-10" 
+                : "opacity-0 scale-103 pointer-events-none z-0"
+            }`}
             style={{
               transform: `translateY(${scrollOffset * 0.15}px)`
             }}
@@ -115,14 +116,15 @@ export default function ProductShowcase() {
       {/* 3. Text Aligned Beautifully to the Right (No Box, No Icons, Compact Elegant Font Size) */}
       <div className="max-w-7xl mx-auto w-full h-full relative z-20 flex flex-col justify-center px-6 md:px-12 lg:px-16 text-right">
         <div className="max-w-xl w-full min-h-[160px] flex flex-col justify-center pr-0 md:pr-4 select-none">
-
+          
           {textSlides.map((slide, idx) => (
             <div
               key={idx}
-              className={`transition-all duration-700 ease-in-out ${idx === activeIndex
-                ? "opacity-100 translate-x-0 relative z-10"
-                : "opacity-0 translate-x-8 absolute pointer-events-none z-0"
-                }`}
+              className={`transition-all duration-700 ease-in-out ${
+                idx === activeIndex 
+                  ? "opacity-100 translate-x-0 relative z-10" 
+                  : "opacity-0 translate-x-8 absolute pointer-events-none z-0"
+              }`}
             >
               {/* Category Tag */}
               <span className="text-[#D6B06A] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase font-display block mb-2 drop-shadow-md">
@@ -147,10 +149,10 @@ export default function ProductShowcase() {
 
       {/* 4. Minimalist Navigation & Progress at the Bottom Right */}
       <div className="absolute bottom-8 right-6 md:right-12 lg:right-16 left-6 md:left-auto z-20 flex flex-col items-end gap-3.5 max-w-xs w-auto">
-
+        
         {/* Compact timer line */}
         <div className="w-36 h-[2px] bg-white/20 rounded-full overflow-hidden">
-          <div
+          <div 
             key={activeIndex}
             className="h-full bg-[#D6B06A] transition-all duration-[4500ms] ease-linear"
             style={{ width: "100%" }}
@@ -159,15 +161,16 @@ export default function ProductShowcase() {
 
         {/* Arrow Navigation and Dot indicators */}
         <div className="flex items-center gap-4">
-
+          
           {/* Active indicator dots (Exactly 4 dots) */}
           <div className="flex gap-1.5 ml-2">
             {imageSlides.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setActiveIndex(idx)}
-                className={`h-1.5 rounded-full transition-all duration-500 ${idx === activeIndex ? "w-5 bg-[#D6B06A]" : "w-1.5 bg-white/35"
-                  }`}
+                className={`h-1.5 rounded-full transition-all duration-500 ${
+                  idx === activeIndex ? "w-5 bg-[#D6B06A]" : "w-1.5 bg-white/35"
+                }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
