@@ -100,8 +100,10 @@ export default function Header() {
               EST. 1946
             </span>
           </div>
-          <svg className="w-7 h-7 text-[#D6B06A] transition-transform duration-500 group-hover:rotate-45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 0L55.9 30.9L85.4 14.6L67.6 42.4L98.1 48L68.4 55.4L88.9 78.9L58.2 68.4L50 100L41.8 68.4L11.1 78.9L31.6 55.4L1.9 48L32.4 42.4L14.6 14.6L44.1 30.9L50 0Z" fill="currentColor"/>
+          <svg className="w-7 h-7 text-[#D6B06A] transition-transform duration-500 group-hover:scale-110" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2.5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 35 L50 15 L75 35 L50 85 Z" />
+            <path d="M35 40 L50 28 L65 40" strokeWidth="2" />
+            <circle cx="50" cy="50" r="9" strokeWidth="2" />
           </svg>
         </a>
 

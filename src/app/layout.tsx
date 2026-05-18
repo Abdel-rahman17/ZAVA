@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   authors: [{ name: "ZAVA JO" }],
   viewport: "width=device-width, initial-scale=1.0",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
   openGraph: {
     title: "ZAVA | الإصدار المحدود لعيد الاستقلال",
