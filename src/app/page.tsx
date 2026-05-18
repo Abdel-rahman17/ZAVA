@@ -18,11 +18,11 @@ export default function Home() {
         {/* Full-width Cinematic Hero Section */}
         <Hero />
 
-        {/* Product Details & Cultural Heritage Grid */}
-        <ProductDetails />
-
         {/* Dynamic Image & Details Showcase */}
         <ProductShowcase />
+
+        {/* Product Details & Cultural Heritage Grid */}
+        <ProductDetails />
 
         {/* Trust, Progress Bar & Urgency Countdown Timer */}
         <QuantityProgress />
