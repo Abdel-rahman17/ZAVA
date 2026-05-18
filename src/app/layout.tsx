@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   keywords: ["ZAVA", "ملابس أردنية", "عيد الاستقلال", "تراث أردني", "البتراء", "جرش", "موضة أردنية", "هوية أردنية", "ملابس فاخرة"],
   authors: [{ name: "ZAVA JO" }],
   viewport: "width=device-width, initial-scale=1.0",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "ZAVA | الإصدار المحدود لعيد الاستقلال",
     description: "قطعة مستوحاة من التراث الأردني، بتصميم يحكي الفخر والهوية. 50 قطعة فقط.",
